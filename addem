@@ -1,0 +1,31 @@
+//addem_fast assignment
+#include <iostream>
+#include <string>
+
+int main (int argc, char argv ){
+    if (argc != 2){
+        std:: cout << "Usage: ./addem.exe <name>" << std::endl; 
+        return 1;
+    }
+    
+    std::string name = argv[0] ;
+    int firstnumber = name.length();
+    int secondnumber = (firstnumber +13)/7;
+    int totalsum = firstnumber + secondnumber; 
+
+
+    std::cout << "Hello " << name << " what is ";
+    std::cout << firstnumber << "+" << secondnumber << std::endl;
+
+    int answer; 
+    std:: cin >> answer;
+    if (answer ==  totalsum){
+        std::cout << "Correct " << name << "!" << std::endl;
+    } else {
+        std::cout << "No " << name << ", it is ";
+        std::cout << totalsum << "." << std ::endl;
+    }
+    return 0;
+    std::cout << "No ";
+
+}
