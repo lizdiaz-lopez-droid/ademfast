@@ -4,15 +4,36 @@
 #include <random>
 #include <chrono>
 
-int main (int argc, char argv []){
+int main (int argc, char* argv[]){
     if (argc != 3) { //2 arguments
         std:: cout << "Usage: ./addem_fast.exe <name> <seconds>" << std::endl;
         return 1;
-    
     }
     std::string name = argv[1] ; //The Game
     std:: minstd_rand gen(name.length()); //Random Numbers
-    auto start  = std::chrono::steady_clock::now(); //
+    auto start  = std::chrono::steady_clock::now(); //Timing
+
+    While (true) {
+        int firstnumber;
+        int secondnumber;
+
+        if (firstquestion) {
+            int firstnumber = name.length();
+            int secondnumber = (firstnumber +13)/7;
+            int firstquestion = false;
+        }else {
+            firstnumber =
+            secondnumber = 
+        }
+
+
+        }
+
+    }
+int
+
+    std::chrono::duration<double> elapsed = std::chrono::steady_clock::now() - start;
+
 
 
 
@@ -20,12 +41,6 @@ int main (int argc, char argv []){
 
 
 }
-
-
-
-
-
-
 
 
     std::string name = argv[] ;
