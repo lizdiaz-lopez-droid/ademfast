@@ -52,6 +52,7 @@ int main (int argc, char* argv[]){
         if (elapsed.count() > seconds) {
             break;
         }
+    }
         std::cout << "You got " << correctnumber << " correct!" << std::endl;
 
     return 0;
