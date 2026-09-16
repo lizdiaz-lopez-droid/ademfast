@@ -9,9 +9,11 @@ int main (int argc, char* argv[]){
         std:: cout << "Usage: ./addem_fast.exe <name> <seconds>" << std::endl;
         return 1;
     }
-    std::string name = argv[1] ; //The Game
+    std::string name = argv[1] ; //The Game | First Argument
     std:: minstd_rand gen(name.length()); //Random Numbers
     auto start  = std::chrono::steady_clock::now(); //Timing
+    int seconds = argv[2] ; // Second Argument
+
 
     While (true) {
         int firstnumber;
