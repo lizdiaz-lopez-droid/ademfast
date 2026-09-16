@@ -16,22 +16,26 @@ int main (int argc, char* argv[]){
     int correctnumber = 0;
     bool firstquestion = true;
 
-    While (true) {
+    While(true) {
         int firstnumber;
         int secondnumber;
         int totalsum = firstnumber + second number;
+
         if (firstquestion) {
             int firstnumber = name.length();
             int secondnumber = (firstnumber +13)%7;
             int firstquestion = false;
+
         }else {
             firstnumber = gen() % 100;
             secondnumber = gen() % 100;
         }
+
         std::cout << "Hello " << name << "what is ";
         std::cout << firstnumber << "+" << secondnumber << std::endl;
-        int answer;
         
+        int answer;
+    
         if (!(std::cin >>answer)) {
             break;
         }
@@ -41,8 +45,10 @@ int main (int argc, char* argv[]){
             std::cout << totalsum << "." << std::endl;
             break;
         }
-     }
+        std::cout << "Correct " << name << "!" <<endl;
+        correctnumber++;
         std::chrono::duration<double> elapsed = std::chrono::steady_clock::now() - start;
+        
         if (elapsed.count() > seconds) {
             break;
         }
