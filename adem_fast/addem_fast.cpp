@@ -14,46 +14,48 @@ int main (int argc, char* argv[]){
     auto start  = std::chrono::steady_clock::now(); //Timing
     int seconds = argv[2] ; // Second Argument
 
-
     While (true) {
         int firstnumber;
         int secondnumber;
-
+        int totalsum = firstnumber + second number;
         if (firstquestion) {
             int firstnumber = name.length();
-            int secondnumber = (firstnumber +13)/7;
+            int secondnumber = (firstnumber +13)%7;
             int firstquestion = false;
         }else {
-            firstnumber =
-            secondnumber = 
+            firstnumber = gen() % 100;
+            secondnumber = gen() % 100;
         }
+        std::cout << "Hello " << name << "what is ";
+        std::cout << firstnumber << "+" << secondnumber << std::endl;
+        int answer;
+        
+        if (!(std::cin >>answer)) {
+            break;
+        }
+        
+        if (answer != totalsum ) {
+            std::cout << "No " << name << ", it is ";
+            std::cout << totalsum << "." << std::endl;
+            break;
+        }
+
+
 
 
         }
 
     }
-int
-
     std::chrono::duration<double> elapsed = std::chrono::steady_clock::now() - start;
 
-
-
-
-
-
-
-}
 
 
     std::string name = argv[] ;
     int firstnumber = name.length();
     int secondnumber = (firstnumber +13)/7;
     int totalsum = firstnumber + secondnumber; 
-
-
     std::cout << "Hello " << name << " what is ";
     std::cout << firstnumber << "+" << secondnumber << std::endl;
-
     int answer; 
     std:: cin >> answer;
     if (answer ==  totalsum){
