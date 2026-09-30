@@ -1,4 +1,7 @@
 #include <iostream>
 #include <string>
 #include <random>
-#include <stdexcept>
+int main () {
+    
+}
+std::cout << "Usage: ./guess_number.exe <number>" << std::endl;  //may asume that the argument is a whole number
