@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-#include <random>
 
-guess(0, max_num);
+void guess(int lowest, int highest);
+
 // FIRST RETURN OR OUTPUTS
 int main (int argc, char* argv[]) {
     if (argc != 2 ) {
@@ -24,14 +24,15 @@ int main (int argc, char* argv[]) {
         max_guess++;
     }
 
-    std::cout << "Pick a number between 0 and " << number<< ". I will guess it in at most <maximum> tries!" //Initial question asked
-    
+    std::cout << "Pick a number between 0 and " << number << ".I will guess it in at most " << maximum << " tries!" << std::endl; //Initial question asked
+    guess(0, max_num);
+    return 0;
     }
 
 //SECOND PART IF NUMBER NOT BELOW ZERO
 void guess(int lowest, int highest) {//determining the guess
-int middle = (lowest + highest) / 2;
-std::cout << "Is it " << guess << "?" << endl;
+    int middle = (lowest + highest) / 2;
+    std::cout << "Is it " << middle << "?" << std::endl;
 
 std::string input;
 std::cin >> input;
