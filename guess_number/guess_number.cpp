@@ -11,15 +11,19 @@ int main (int argc, char* argv[]) {
         return 1;
     }
 
-    int max_tries = std::stoi(argv[]);
-    if (max_tries < 1) {
+    int max_num = std::stoi(argv[]);
+    if (max_num < 1) {
         std::cout << "Usage: ./guess_number.exe <number>" << std::endl;
         return 1;
     }
+
+    int max_guess = 1;
+    int num_size = max_num + 1; //"<number> + 1"
+
     
 
 
-    //<number> + 1
+    
 
 
 
