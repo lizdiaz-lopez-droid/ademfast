@@ -18,7 +18,7 @@ int main (int argc, char* argv[]){
 
     while(true) {
         int firstnumber;
-        int secondnumber;
+        int secondnumber; 
        
         if (firstquestion) {
             firstnumber = name.length();
@@ -31,7 +31,7 @@ int main (int argc, char* argv[]){
         }
         int totalsum = firstnumber + secondnumber;
         
-        std::cout << "Hello " << name << "what is ";
+        std::cout << "Hello " << name << " what is ";
         std::cout << firstnumber << "+" << secondnumber << std::endl;
         
         int answer;
