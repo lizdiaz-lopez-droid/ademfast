@@ -4,8 +4,6 @@
 
 // FIRST RETURN OR OUTPUTS
 int main (int argc, char* argv[]) {
-    int number;
-    std::cin >> number;
     if (number < 1 ) {
         std::cout << "Usage: ./guess_number.exe <number>" << std::endl; //may asume that the argument is a whole number
         return 1;
