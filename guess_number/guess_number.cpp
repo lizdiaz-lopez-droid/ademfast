@@ -24,7 +24,7 @@ int main (int argc, char* argv[]) {
         max_guess++;
     }
 
-    std::cout << "Pick a number between 0 and " << number << ".I will guess it in at most " << maximum << " tries!" << std::endl; //Initial question asked
+    std::cout << "Pick a number between 0 and " << max_num << ".I will guess it in at most " << max_guess << " tries!" << std::endl; //Initial question asked
     guess(0, max_num);
     return 0;
     }
@@ -56,5 +56,3 @@ else{
 guess(lowest, highest);
 }
 }
-
-//test running #4
