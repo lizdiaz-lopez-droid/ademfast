@@ -56,9 +56,3 @@ else{
 guess(lowest, highest);
 }
 }
-
-int main () {
-    
-    //
-    //
-}
