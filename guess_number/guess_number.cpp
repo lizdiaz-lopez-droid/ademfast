@@ -32,11 +32,27 @@ int main (int argc, char* argv[]) {
 //SECOND PART IF NUMBER NOT BELOW ZERO
 void guess(int lowest, int highest) {//determining the guess
 int middle = (lowest + highest) / 2
-    std::cout << "I win!" // If the answer is guessed correctly
+std::cout << "Is it <guess>?"
+
+string input;
+std::cin >> input;
+
+if (!cin)
+{
+    return;
 }
-} 
+
+if (input == "=") {
+    std::cout << "I win!" << std::endl; // If the answer is guessed correctly
+}
+else if (input == "<"){
+    guess(lowest, middle - 1);
+}
+    
+}
+
 int main () {
     
-    //std::cout << "Is it <guess>?"
+    //
     //
 }
