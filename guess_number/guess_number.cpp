@@ -16,27 +16,27 @@ int main (int argc, char* argv[]) {
         return 1;
     }
 
-    int max_guess = 1;
+    int max_guess = 0;
     int num_size = max_num + 1; //"<number> + 1"
 
-    while (num_size > 1) {
+    while (num_size > 0) {
         num_size = num_size /2;
         max_guess++;
     }
 
-    std::cout << "Pick a number between 0 and <number>. I will guess it in at most <maximum> tries!" //Initial question asked
+    std::cout << "Pick a number between 0 and " << number<< ". I will guess it in at most <maximum> tries!" //Initial question asked
     
     }
 
 //SECOND PART IF NUMBER NOT BELOW ZERO
 void guess(int lowest, int highest) {//determining the guess
 int middle = (lowest + highest) / 2;
-std::cout << "Is it <guess>?";
+std::cout << "Is it " << guess << "?" << endl;
 
-string input;
+std::string input;
 std::cin >> input;
 
-if (!cin)
+if (!std::cin)
 {
     return;
 }
