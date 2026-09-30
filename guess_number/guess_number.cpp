@@ -26,12 +26,17 @@ int main (int argc, char* argv[]) {
     }
 
     std::cout << "Pick a number between 0 and <number>. I will guess it in at most <maximum> tries!" //Initial question asked
-    
+    guess(0, max_num);
     }
 
 //SECOND PART IF NUMBER NOT BELOW ZERO
+void guess(int lowest, int highest) {//determining the guess
+int middle = (lowest + highest) / 2
+    std::cout << "I win!" // If the answer is guessed correctly
+}
+} 
 int main () {
     
     //std::cout << "Is it <guess>?"
-    //std::cout << "I win!" // If the answer is guessed correctly
+    //
 }
