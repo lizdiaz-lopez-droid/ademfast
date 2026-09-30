@@ -48,7 +48,13 @@ if (input == "=") {
 else if (input == "<"){
     guess(lowest, middle - 1);
 }
-    
+else if (input == ">") {
+    guess(middle + 1, highest);
+}
+else{
+    std::cout << "Please enter <, >, or =" << std::endl; //this is for unvalid inputs
+guess(lowest, highest);
+}
 }
 
 int main () {
